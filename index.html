@@ -1,0 +1,2027 @@
+<!--Declara el tipo de documento y la versión de HTML que se está utilizando (HTML 5)-->
+<!DOCTYPE html>
+
+<!--Define el inicio del documento HTML y establece el idioma de la página como español (es)-->
+<html lang="es">
+
+<!---------------------------------------------------------HEAD----------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+<!--Contiene metadatos y enlaces a recursos externos como hojas de estilo y scripts.-->
+<head>
+
+  <!--Define el conjunto de caracteres utilizado (UTF-8 es universal y soporta la mayoría de los caracteres)--> 
+  <meta charset="UTF-8">
+  <!--Asegura que la página se visualice correctamente en dispositivos móviles ajustando el ancho y la escala inicial(resposive)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Proporciona una descripción de la página web para los motores de búsqueda-->
+  <meta name="description" content="Fundación dedicada a ayudar a las personas en situación de vulnerabilidad, ofreciendo apoyo social, educativo y emocional para mejorar sus vidas.">
+  <!--Define palabras clave relacionadas con el contenido de la página-->
+  <meta name="keywords" content="fundación, apoyo social, educación, pobreza, ayuda a niños, voluntariado, donaciones, desarrollo comunitario, inclusión social, bienestar infantil">
+  <!--Identifica al autor de la página-->
+  <meta name="author" content="Bootcamp Talento Tech">
+  <!--<title>: Define el título de la página que se muestra en la pestaña del navegador-->
+  <title>Fundacion_Social</title>
+  <!--Sirve para traer los iconos de boostrap en linea-->
+  <!--<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">-->
+
+  <!--Sirve para traer los iconos de boostrap local-->
+  <link rel="stylesheet" type="text/css" href="Assets(activos)/Vendor(recursos externos)/Boostrap-icons (Libreria para icnos y fuentes)/Icons (Iconos)/bootstrap-icons.min.css">  
+
+  <!--Sirve para traer los estilos css de boostrap en linea-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+
+  <!--Sirve para traer los estilos css de boostrap en local-->
+  <link rel="stylesheet" href="Assets(activos)/Vendor(recursos externos)/Boostrap(Librerias css y javascript)/Libreria css/bootstrap.min.css">  
+
+  <!--Enlaza el archivo CSS personalizado para aplicar estilos a la página-->
+  <link rel="stylesheet" href="Assets(activos)/CSS (personalizado)/main.css">
+</head>
+<!------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+<!---------------------------------------------------------BODY----------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+<!--Contiene el contenido visible de la página web-->
+<body>
+
+    <!-----------------------------------------------------MENU-------------------------->
+    <!----------------------------------------------------------------------------------->
+    <!--<div con clases ="container my-4" de boostrap para estilizar el div y dar margen al div espacio-->
+    <div class="container my-4  text-center">
+
+                     <!--nav con clases ="navbar navbar-expand-lg="estilo general del navbar" navbar-dark="color navbar" de boostrap para estilizar el menu-->
+                     <nav class="navbar navbar-expand-lg navbar-dark">
+
+                      <!--div con clase ="container-fluid" de boostrap para estilizar el div-->
+                       <div class="container-fluid">
+              
+                        <!--a con clase ="navbar-brand" de boostrap para estilizar el link del logo-->
+                       <a class="navbar-brand" href="#">
+              
+                          <!--img con src para llamar la imagen y con clases ="d-inline-block align-text-top" de boostrap para estilizar el logo-->
+                           <img src="Assets -Activos/Img -Imagenes/logofinalfinal__1_-removebg-preview.png"   alt="Logo" width="60" height="50" class="d-inline-block align-text-top" >
+                              <h5>Universal Work</h5>
+                        </a>
+              
+                        <!--button para que se active en dispotitivos moviles, con clase="navbar-toggler" de boostrap para estilizar el boton de dispositivos moviles-->
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+              
+                        <!--div que contiene la lsita de links con clases ="collapse navbar-collapse" de boostrap para estilizar los links-->          
+                         <div class="collapse navbar-collapse" id="navbarNav">
+              
+                          <!--ul con clase ="navbar-nav" de boostrap para estilizar los puntos de los links-->
+                          <ul class="navbar-nav">
+              
+                            <!--li con clase ="nav-item dropdown" de boostrap para estilizar el submenu-->
+                             <li class="nav-item dropdown">
+              
+                              <!--a con clase ="nav-link dropdown-toggle" de boostrap para estilizar el submenu en dispositivos y su link-->
+                               <a class="nav-link show dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                America del norte ---
+                              </a>
+              
+                              <!--ul con clase ="dropdown-menu" de boostrap para estilizar los submenus de un menu principal-->
+                               <ul class="dropdown-menu">
+                                <!--li y a con clase ="dropdown-item" de boostrap para estilizar cada sublink y punto default-->
+                                <li><a class="dropdown-item" href="#USAJobs">USAJobs</a></li>
+                                <li><a class="dropdown-item" href="#Workopolis">Workopolis</a></li>
+                                <li><a class="dropdown-item" href="#JobBank">JobBank</a></li>
+                                <li><a class="dropdown-item" href="#Craigslist">Craigslist</a></li>
+                                <li><a class="dropdown-item" href="#OCCMundial">OCCMundial</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                America latina
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Bumeran">Bumeran</a></li>
+                                <li><a class="dropdown-item" href="#Computrabajo">Computrabajo</a></li>
+                                <li><a class="dropdown-item" href="#Elempleo">Elempleo</a></li>
+                                <li><a class="dropdown-item" href="#Servicio de empleo">Servicio de empleo</a></li>
+                                <li><a class="dropdown-item" href="#ZonaJobs">ZonaJobs</a></li>
+                                <li><a class="dropdown-item" href="#Jobomas">Jobomas</a></li>
+                                <li><a class="dropdown-item" href="#Trabajo.org">Trabajo.org</a></li>
+                                <li><a class="dropdown-item" href="#Empleos.net">Empleos.net</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Europa
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#StepStone">StepStone</a></li>
+                                <li><a class="dropdown-item" href="#Eures">Eures</a></li>
+                                <li><a class="dropdown-item" href="#Jobsite">Jobsite</a></li>
+                                <li><a class="dropdown-item" href="#Totaljobs">Totaljobs</a></li>
+                                <li><a class="dropdown-item" href="#Jobs.cz">Jobs.cz</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Asia
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Naukri">Naukri</a></li>
+                                <li><a class="dropdown-item" href="#JobsDB">JobsDB</a></li>
+                                <li><a class="dropdown-item" href="#Zhaopin">Zhaopin</a></li>
+                                <li><a class="dropdown-item" href="#51Job">51Job</a></li>
+                                <li><a class="dropdown-item" href="#Careerjet">Careerjet</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Oceania
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Seek">Seek</a></li>
+                                <li><a class="dropdown-item" href="#Careerone">Careerone</a></li>
+                                <li><a class="dropdown-item" href="#Jora">Jora</a></li>
+                                <li><a class="dropdown-item" href="#Workible">Workible</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Africa
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Jobberman">Jobberman</a></li>
+                                <li><a class="dropdown-item" href="#MyJobMag">MyJobMag</a></li>
+                                <li><a class="dropdown-item" href="#Careers24">Careers24</a></li>
+                                <li><a class="dropdown-item" href="#BrighterMonday">BrighterMonday</a></li>
+                                <li><a class="dropdown-item" href="#expat.com">expat.com</a></li>
+                                <li><a class="dropdown-item" href="#Pnet">Pnet</a></li>
+                                <li><a class="dropdown-item" href="#Jobmail">Jobmail</a></li>
+                              </ul>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Freelancer y remoto
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Upwork">Upwork</a></li>
+                                <li><a class="dropdown-item" href="#Freelancer">Freelancer</a></li>
+                                <li><a class="dropdown-item" href="#Fiverr">Fiverr</a></li>
+                                <li><a class="dropdown-item" href="#Toptal">Toptal</a></li>
+                                <li><a class="dropdown-item" href="#Remote OK">Remote OK</a></li>
+                                <li><a class="dropdown-item" href="#We Work Remotely">We Work Remotely</a></li>
+                                <li><a class="dropdown-item" href="#FlexJobs2">FlexJobs(F-R)</a></li>
+                                <li><a class="dropdown-item" href="#Guru">Guru</a></li>
+                                <li><a class="dropdown-item" href="#PeoplePerHour">PeoplePerHour</a></li>
+                                <li><a class="dropdown-item" href="#Hubstaff Talent">Hubstaff Talent</a></li>
+                                <li><a class="dropdown-item" href="#SimplyHired2">SimplyHired(F-R)</a></li>
+                                <li><a class="dropdown-item" href="#Remotive2">Remotive(F-R)</a></li>
+                                <li><a class="dropdown-item" href="#AngelList2">AngelList(F-R)</a></li>
+                                <li><a class="dropdown-item" href="#Working Nomads">Working Nomads</a></li>
+                                <li><a class="dropdown-item" href="#Stack Overflow Jobs">Stack Overflow Jobs</a></li>
+                              </ul>
+                            </li>
+              
+              
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Internacionales
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#LinkedIn">LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="#Indeed">Indeed</a></li>
+                                <li><a class="dropdown-item" href="#Glassdoor">Glassdoor</a></li>
+                                <li><a class="dropdown-item" href="#Monster">Monster</a></li>
+                                <li><a class="dropdown-item" href="#CareerBuilder">CareerBuilder</a></li>
+                                <li><a class="dropdown-item" href="#SimplyHired">SimplyHired</a></li>
+                                <li><a class="dropdown-item" href="#ZipRecruiter">ZipRecruiter</a></li>
+                                <li><a class="dropdown-item" href="#FlexJobs">FlexJobs</a></li>
+                                <li><a class="dropdown-item" href="#Adzuna">Adzuna</a></li>
+                                <li><a class="dropdown-item" href="#Jooble">Jooble</a></li>
+                                <li><a class="dropdown-item" href="#TheLadders">TheLadders</a></li>
+                                <li><a class="dropdown-item" href="#Talent">Talent</a></li>
+                                <li><a class="dropdown-item" href="#AngelList">AngelList</a></li>
+                                <li><a class="dropdown-item" href="#Remotive">Remotive</a></li>                  
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+              
+                      </div>
+                    </nav>
+
+
+    </div>
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->
+
+
+    <!-----------------------------------------------------MAIN-------------------------->
+    <!----------------------------------------------------------------------------------->
+    <!--etiquta que contiene toda pagina y contiene el contenido principal de la pagina-->
+    <main>
+
+          <!--container slider-->
+        <div class="container my-4 container-custom-slider text-center">  
+          
+          <div class="row">
+
+            <div class="col-sm-12  col-md-8 col-lg-8 col-xl-8" >
+              <div class="carousel-container ">
+                <div class="carousel-wrapper">
+                  <div class="carousel-item">
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/COMPUTRABAJOLOGO.jpg" alt="Imagen 1">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ELEMPLEOLOGO.png" alt="Imagen 2">
+                  </div>
+                  <div class="carousel-item">
+                  
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/GLASSDOORLOGO.png" alt="Imagen 3">
+                  </div>
+                  <div class="carousel-item">
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/PNETLOGO.png" alt="Imagen 4">
+                  </div>
+                  <div class="carousel-item">
+                  
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/FREELANCERLOGO.png" alt="Imagen 5">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12  col-md-4 col-lg-4 col-xl-4">
+              <div class="text-box container text-center">
+                <p>Bienvenido a tu portal de empleo definitivo. Conectamos a profesionales con oportunidades laborales excepcionales en diversas industrias. Ya sea que estés buscando el siguiente paso en tu carrera o necesites encontrar talento para tu empresa, nuestra plataforma te ofrece herramientas avanzadas de búsqueda y una interfaz intuitiva. Descubre ofertas de empleo actualizadas, optimiza tu perfil y postúlate fácilmente a los trabajos que se ajusten a tus habilidades y aspiraciones. ¡Comienza hoy tu camino hacia el éxito profesional!</p>
+              </div>	
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <!--container seccion AMERICA DEL NORTE-->
+        <div class="container my-4 container-custom-izquierda"> 
+
+          <section id="seccion">
+
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textizquierda" >America Del Norte</h2>
+              </div>
+
+            <div class="container text-center">
+
+              <div class="row">
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="USAJobs" class=" link-a" href="https://www.usajobs.gov/" target="_blank" >
+                        USAJobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/USAJOBSLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+
+                       <p>Es una herramienta importante pa quienes estan interesados en trabajar en el gobierno federal de los EE.UU. Ofrece una plataforma centralizada y accesible para encontrar oportunidades de empleo en diversas agencias y departamentos.</p>
+                        
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Workopolis" class=" link-a" href="https://www.workopolis.com/" target="_blank" >
+                        Workopolis
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/WORKPOLISLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales bolsas de empleo en Canadá, ofreciendo una amplia gama de oportunidades laborales en diferentes sectores y provincias.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="JobBank" class=" link-a" href="https://www.jobbank.gc.ca/home" target="_blank" >
+                        JobBank
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBANKLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es el sitio oficial del gobierno canadiense para la búsqueda de empleo. Ofrece listados de trabajos en todo Canadá, junto con información sobre las tendencias del mercado laboral.</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Craigslist" class=" link-a" href="https://colombia.craigslist.org/" target="_blank" >
+                        Craigslist
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/CRAIGSLISTLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un sitio web clasificado que permite a los usuarios comprar, vender, intercambiar y encontrar una variedad de productos y servicios en su área local. ofrece anuncios clasificados en una amplia gama de categorías, incluyendo empleo, bienes raíces, vehículos, ventas de garaje, servicios, eventos y más.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="OCCMundial" class=" link-a" href="https://www.occ.com.mx/" target="_blank" >
+                        OCCMundial
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/OCCMUNDIALLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma líder en México para la búsqueda de empleo. Ofrece listados de trabajos en todo el país y herramientas para la búsqueda y postulación de empleos.</p>
+                    </div>
+                    
+                  </div>
+
+                  
+                  <div class="col">
+                    
+                  </div>
+                  
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  
+                  <div class="col">
+
+                  </div>
+
+                
+                  <div class="col">
+                    
+                  </div>
+                  
+
+                </div>
+
+              </div>
+
+            </div> 
+          </section>
+        </div>
+
+        <!--container seccion1 AMERICA LATINA-->
+        <div class="container my-4 container-custom-derecha"> 
+
+          <section id="seccion1">
+
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textderecha" >America Latina</h2>
+              </div>
+
+            <div class="container text-center">
+
+              <div class="row">
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="Bumeran" class=" link-a" href="https://www.bumeran.com.ar/" target="_blank" >
+                        Bumeran
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/BUMERANLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de búsqueda de empleo que opera en varios países de América Latina, incluyendo Argentina, México, y Perú. Ofrece una variedad de oportunidades laborales y herramientas para la búsqueda y postulación de empleos.</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Computrabajo" class=" link-a" href="https://www.computrabajo.com/" target="_blank" >
+                        Computrabajo
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/COMPUTRABAJOLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales bolsas de empleo en América Latina, con presencia en varios países de la región. Ofrece una amplia gama de oportunidades laborales y permite a los usuarios buscar empleos por ubicación, industria y tipo.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Elempleo" class=" link-a" href="https://www.elempleo.com/" target="_blank" >
+                        Elempleo
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ELEMPLEOLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un portal de empleo en línea dedicado a conectar a empleadores y candidatos en América Latina. Ofrece una amplia variedad de ofertas de trabajo en diferentes sectores y niveles de experiencia.</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Servicio de empleo" class=" link-a" href="https://personas.serviciodeempleo.gov.co/" target="_blank" >
+                        Servicio de empleo
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/SERVICIODEEMPLEOLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma dedicada a ayudar a los ciudadanos a encontrar oportunidades laborales y a conectar con potenciales empleadores. Ofrece una variedad de servicios, como la búsqueda de ofertas de empleo, la publicación de currículums, y la información sobre programas de capacitación y asistencia laboral.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="ZonaJobs" class=" link-a" href="https://www.zonajobs.com.ar/" target="_blank" >
+                        ZonaJobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ZONAJOBSLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Opera en varios países de América Latina, incluyendo Argentina y Chile. Ofrece oportunidades laborales en diversos sectores y permite a los usuarios buscar empleos y gestionar su carrera profesional.</p>
+                    </div>
+                    
+                  </div>
+
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Jobomas" class=" link-a" href="https://co.jobomas.com/" target="_blank" >
+                        Jobomas
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/+JOBOMASLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de búsqueda de empleo con presencia en varios países de América Latina. Ofrece listados de trabajos en diversas industrias y permite a los usuarios postularse y gestionar sus aplicaciones en línea.</p>
+                    </div>
+                    
+                  </div>
+                  
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Trabajo.org" class=" link-a" href="https://www.trabajo.org/" target="_blank" >
+                        Trabajo.org
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/TRABAJO.ORGLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo que ofrece oportunidades laborales en América Latina. Permite buscar trabajos por país, industria y tipo, y proporciona herramientas para la búsqueda y gestión de empleo.</p>
+                    </div>
+                    
+                  </div>
+
+                
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Empleos.net" class=" link-a" href="https://empleos.net/" target="_blank" >
+                        Empleos.net
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/EMPLEOS.NETLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Ofrece una plataforma para buscar trabajos en varios países de América Latina, con listados de empleos en diversos sectores y herramientas para la postulación y gestión de carrera.</p>
+                    </div>
+                    
+                  </div>
+                  
+
+                </div>
+
+              </div>
+
+            </div> 
+          </section>
+        </div>
+
+        <!--container seccion2 EUROPA-->
+        <div class="container my-4 container-custom-izquierda"> 
+
+          <section id="seccion2">
+
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textizquierda" >Europa</h2>
+              </div>
+
+            <div class="container text-center">
+
+              <div class="row">
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="StepStone" class=" link-a" href="https://www.thestepstonegroup.com/english/" target="_blank" >
+                        StepStone
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/STEPSLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Opera en varios países europeos y ofrece una extensa base de datos de ofertas de empleo en diversos sectores. También proporciona herramientas para la creación de currículums y la búsqueda de empleo específica por país.</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Eures" class=" link-a" href="https://europa.eu/eures/portal/404?lang=en" target="_blank" >
+                        Eures
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/EURESLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una red de cooperación entre los servicios de empleo de los países del Espacio Económico Europeo (EEE) y Suiza. Facilita la búsqueda de empleo en Europa al ofrecer información sobre ofertas de trabajo y las condiciones laborales en diferentes países europeos.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Jobsite" class=" link-a" href="https://www.jobsite.co.uk/" target="_blank" >
+                        Jobsite
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBSITELOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo enfocada en el Reino Unido, ofreciendo una variedad de ofertas de trabajo en diferentes sectores. Proporciona herramientas de búsqueda avanzada y recursos para la búsqueda de empleo.</p>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Totaljobs" class=" link-a" href="https://www.totaljobs.com/" target="_blank" >
+                        Totaljobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/TOTALJOBSLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es otra bolsa de empleo relevante en el Reino Unido. Ofrece una amplia gama de empleos en diversos sectores y herramientas para facilitar la búsqueda y postulación a trabajos.</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Jobs.cz" class=" link-a" href="https://www.jobs.cz/" target="_blank" >
+                        Jobs.cz
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBSCZLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de empleo popular en la República Checa, ofreciendo una amplia gama de ofertas de trabajo en el país. También proporciona herramientas para la creación de currículums y la búsqueda de empleo.</p>
+                    </div>
+                    
+                  </div>
+
+                  
+                  <div class="col">
+                    
+                  </div>
+                  
+
+                </div>
+
+
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+
+                  
+                  <div class="col">
+                    
+                  </div>
+
+                
+                  <div class="col">
+                    
+                  </div>
+                  
+
+                </div>
+
+              </div>
+
+            </div> 
+          </section>
+        </div>
+
+        <!--container seccion3 ASIA-->
+        <div class="container my-4 container-custom-derecha"> 
+
+          <section id="seccion3">
+      
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textderecha" >Asia</h2>
+              </div>
+      
+            <div class="container text-center">
+      
+              <div class="row">
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="Naukri" class=" link-a" href="https://www.naukri.com/" target="_blank" >
+                        Naukri
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/NAUKRILOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales bolsas de empleo en India. Ofrece una extensa base de datos de oportunidades laborales en diversos sectores y permite a los usuarios buscar trabajos y gestionar su carrera profesional.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="JobsDB" class=" link-a" href="https://www.jobsdb.com/" target="_blank" >
+                        JobsDB
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBSDBLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>es una bolsa de empleo líder en Asia con presencia en Hong Kong, Indonesia, Tailandia y Singapur. Ofrece una amplia gama de oportunidades laborales y herramientas de búsqueda específicas para cada país.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Zhaopin" class=" link-a" href="https://www.zhaopin.com/" target="_blank" >
+                        Zhaopin
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ZHAPOLINLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales plataformas de empleo en China. Proporciona una amplia variedad de oportunidades laborales y herramientas para la búsqueda de empleo y la gestión de currículums.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="51Job" class=" link-a" href="https://www.51job.com/" target="_blank" >
+                        51Job
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/51JOBLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es otra importante bolsa de empleo en China, ofreciendo oportunidades laborales en diversas industrias y regiones. Incluye herramientas para la búsqueda de empleo y la gestión de aplicaciones.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+      
+              </div>
+      
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Careerjet" class=" link-a" href="https://www.careerjet.com/" target="_blank" >
+                        Careerjet
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/CAREJETLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo que agrega ofertas de trabajo de diferentes fuentes en varios países asiáticos, permitiendo buscar oportunidades laborales de manera eficiente.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+
+            </div> 
+          </section>
+        </div>
+
+        <!--container seccion4 OCEANIA-->
+        <div class="container my-4 container-custom-izquierda"> 
+
+          <section id="seccion4">
+      
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textizquierda" >Oceania</h2>
+              </div>
+      
+            <div class="container text-center">
+      
+              <div class="row">
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="Seek" class=" link-a" href="https://www.seek.com.au/" target="_blank" >
+                        Seek
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/SEEKLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales bolsas de empleo en Australia y Nueva Zelanda. Ofrece una amplia gama de oportunidades laborales en diferentes sectores y proporciona herramientas para la búsqueda de empleo, la creación de currículums y el desarrollo profesional.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Careerone" class=" link-a" href="https://www.careerone.com.au/" target="_blank" >
+                        Careerone
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/CAREONELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo en Australia que proporciona una amplia gama de oportunidades laborales en diferentes sectores. Ofrece herramientas para la búsqueda de empleo y la gestión de aplicaciones.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Jora" class=" link-a" href="https://au.jora.com/" target="_blank" >
+                        Jora
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JORALOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo que opera en Australia y Nueva Zelanda. Agrega ofertas de trabajo de diversas fuentes, permitiendo a los usuarios buscar oportunidades laborales de manera eficiente.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Workible" class=" link-a" href="https://www.workible.com.au/" target="_blank" >
+                        Workible
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/WORKIBLLELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo en Australia que ofrece oportunidades laborales en diferentes sectores, incluyendo tecnología y servicios. Proporciona herramientas para la búsqueda de empleo y la gestión de currículums.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+      
+              </div>
+  
+
+            </div> 
+          </section>
+        </div>  
+
+        <!--container seccion5 AFRICA-->
+        <div class="container my-4 container-custom-derecha"> 
+
+          <section id="seccion5">
+      
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textderecha" >Africa</h2>
+              </div>
+      
+            <div class="container text-center">
+      
+              <div class="row">
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="Jobberman" class=" link-a" href="https://www.jobberman.com/" target="_blank" >
+                        Jobberman
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBERMANLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales bolsas de empleo en Nigeria. Ofrece una amplia gama de oportunidades laborales y permite a los usuarios buscar trabajos, publicar currículums y recibir alertas sobre nuevas ofertas de empleo.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="MyJobMag" class=" link-a" href="https://www.myjobmag.com/" target="_blank" >
+                        MyJobMag
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/MYJOBMAGLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Opera en varios países africanos, incluyendo Nigeria, Kenia y Ghana. Ofrece listados de empleos, información sobre empresas, y recursos para la búsqueda de empleo y desarrollo profesional.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Careers24" class=" link-a" href="https://www.careers24.com/" target="_blank" >
+                        Careers24
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/CAREER24LOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo popular en Sudáfrica. Ofrece una amplia variedad de oportunidades laborales en diferentes sectores y proporciona herramientas para la búsqueda y postulación de empleos.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="BrighterMonday" class=" link-a" href="https://www.brightermonday.co.ke/" target="_blank" >
+                        BrighterMonday
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/BRIGHTERMONDAYLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Ofrece oportunidades laborales en varios países del Este de África, incluyendo Kenia, Uganda y Tanzania. Permite buscar empleos, crear currículums y recibir alertas sobre nuevas ofertas de empleo.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+      
+              </div>
+      
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="expat.com" class=" link-a" href="https://www.expat.com/" target="_blank" >
+                        expat.com
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/EXPATLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Ofrece oportunidades laborales y recursos para expatriados en varios países africanos. Es útil para quienes buscan empleos y consejos sobre la vida en el continente africano.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Pnet" class=" link-a" href="https://www.pnet.co.za/" target="_blank" >
+                        Pnet
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/PNETLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de búsqueda de empleo en Sudáfrica que proporciona listados de trabajos en diversos sectores y herramientas para la búsqueda y postulación de empleos.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="Jobmail" class=" link-a" href="https://www.jobmail.co.za/" target="_blank" >
+                        Jobmail
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOBMAILLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo en Sudáfrica que ofrece una amplia gama de oportunidades laborales. Proporciona listados de empleos, herramientas de búsqueda y recursos para la gestión de aplicaciones.</p>
+                    </div>
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+
+            </div> 
+          </section>
+        </div>  
+
+
+        <!--container seccion6 FREELANCER Y REMOTO-->
+        <div class="container my-4 container-custom-izquierda"> 
+
+          <section id="seccion6">
+      
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textizquierda" >Freelancer y Remoto</h2>
+              </div>
+      
+            <div class="container text-center">
+      
+              <div class="row">
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="Upwork" class=" link-a" href="https://www.upwork.com/" target="_blank" >
+                        Upwork
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/UPWORKLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las principales plataformas para trabajos freelance y remotos. Permite a los freelancers ofrecer sus servicios en una amplia gama de categorías, desde redacción y diseño hasta programación y marketing. Los clientes pueden publicar proyectos y contratar freelancers basándose en sus perfiles y propuestas.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Freelancer" class=" link-a" href="https://www.freelancer.com/" target="_blank" >
+                        Freelancer
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/FREELANCERLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma global que conecta a freelancers con clientes que necesitan servicios en áreas como desarrollo web, diseño gráfico, redacción y más. Permite a los usuarios publicar proyectos y competir en licitaciones para conseguir trabajos.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Fiverr" class=" link-a" href="https://www.fiverr.com/" target="_blank" >
+                        Fiverr
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/FIVERRLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma que permite a los freelancers ofrecer servicios en forma de "gigs" (ofertas) a partir de $5. Los usuarios pueden buscar servicios en áreas como diseño gráfico, redacción, traducción y programación, y contratar freelancers directamente.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Toptal" class=" link-a" href="https://www.toptal.com/" target="_blank" >
+                        Toptal
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/TOPTALLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de freelancing que se enfoca en conectar a los clientes con freelancers de alto nivel en áreas como desarrollo de software, diseño y finanzas. Ofrece un riguroso proceso de selección para garantizar la calidad de los talentos.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+      
+              </div>
+      
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Remote OK" class=" link-a" href="https://remoteok.com/" target="_blank" >
+                        Remote OK
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/REMOTEOKLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo que se especializa en trabajos remotos en diversas industrias. Los usuarios pueden buscar ofertas de trabajo remoto por categoría y ubicación, y la plataforma incluye trabajos en startups y empresas establecidas.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="We Work Remotely" class=" link-a" href="https://weworkremotely.com/" target="_blank" >
+                        We Work Remotely
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/WEWORKLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma dedicada exclusivamente a trabajos remotos. Ofrece oportunidades laborales en una variedad de categorías, incluyendo programación, diseño, marketing y atención al cliente.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="FlexJobs2" class=" link-a" href="https://www.flexjobs.com/" target="_blank" >
+                        FlexJobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/FLEXJOBSLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Se especializa en trabajos flexibles, incluyendo trabajos remotos y de medio tiempo. La plataforma ofrece una curaduría de empleos para garantizar que las oportunidades sean legítimas y de alta calidad.</p>
+                    </div>
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="Guru" class=" link-a" href="https://www.guru.com/" target="_blank" >
+                        Guru
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/GURULOGO.jpg" class="animated-image" alt="Logo" width="130" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de freelancing que permite a los freelancers ofrecer sus servicios en áreas como programación, diseño, escritura y consultoría. Los clientes pueden publicar proyectos y buscar freelancers adecuados para sus necesidades.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+  
+  
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="PeoplePerHour" class=" link-a" href="https://www.peopleperhour.com/" target="_blank" >
+                        PeoplePerHour
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/PEOPLEPERHOURLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Conecta a freelancers con clientes que buscan servicios en áreas como diseño, redacción, marketing y desarrollo web. Los freelancers pueden ofrecer sus servicios por hora o en forma de proyectos fijos.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Hubstaff Talent" class=" link-a" href="https://hubstafftalent.net/" target="_blank" >
+                        Hubstaff Talent
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/HUBLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma gratuita que conecta a empresas con freelancers y agencias en áreas como desarrollo, diseño, marketing y escritura. Los perfiles en Hubstaff Talent son gratuitos y se pueden buscar por habilidades y ubicación.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="SimplyHired2" class=" link-a" href="https://www.simplyhired.com/" target="_blank" >
+                        SimplyHired
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div> 
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/SIMPLYHIRELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo que también incluye trabajos freelance y remotos. Permite buscar oportunidades laborales por ubicación, industria y tipo de empleo.</p>
+                    </div>
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="Remotive2" class=" link-a" href="https://remotive.com/" target="_blank" >
+                        Remotive
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/REMOTIVELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                      <p>Es una plataforma que ofrece listados de trabajos remotos en áreas como tecnología, marketing y soporte. La comunidad también ofrece recursos y apoyo para quienes buscan trabajar de manera remota.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="AngelList2" class=" link-a" href="https://www.angellist.com/careers" target="_blank" >
+                        AngelList
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ANGELISTLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                      <p>Es una plataforma que conecta a startups con talentos freelance y remotos. Ofrece oportunidades laborales en startups tecnológicas y permite a los usuarios buscar trabajos en empresas emergentes.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Working Nomads" class=" link-a" href="https://www.workingnomads.com/jobs" target="_blank" >
+                        Working Nomads
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/NOMADSLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                     <p>Proporciona una selección curada de trabajos remotos en áreas como desarrollo, diseño y marketing. Los usuarios pueden recibir alertas por correo electrónico con oportunidades que coincidan con sus intereses.</p>
+                    </div>
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Stack Overflow Jobs" class=" link-a" href="https://stackoverflow.com/jobs" target="_blank" >
+                        Stack Overflow Jobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/STACKLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                     <p>Ofrece oportunidades laborales para desarrolladores de software y profesionales de tecnología. Incluye trabajos remotos y freelance en su lista de ofertas.</p>
+                    </div>
+
+                  </div>
+
+    
+                  <div class="col">
+
+                  </div>
+                 
+      
+                </div>
+      
+              </div>
+      
+      
+            </div> 
+          </section>
+        </div>      
+
+
+        <!--container seccion7 INTERNACIONALES-->
+        <div class="container my-4 container-custom-derecha"> 
+
+          <section id="seccion7">
+      
+              <div class="container text-center  container my-4">
+                <h2 class="fs-1 animate-textderecha" >Internacionales</h2>
+              </div>
+      
+            <div class="container text-center">
+      
+              <div class="row">
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                
+                  <div class="col">
+
+                    <div class="container my-4">                  
+
+                      <a id="LinkedIn" class=" link-a" href="https://www.linkedin.com/jobs/" target="_blank" >
+                        LinkedIn
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+                    
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/LINKEDLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una de las plataformas más grandes para buscar empleo a nivel global. Ofrece una amplia gama de oportunidades laborales en diversas industrias y permite a los usuarios conectar con reclutadores y empresas, además de buscar trabajos por ubicación y sector.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Indeed" class=" link-a" href="https://co.indeed.com/?r=us" target="_blank" >
+                        Indeed
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/INDEEDLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo global que agrega ofertas de trabajo de diversas fuentes. Permite buscar empleos por ubicación, industria y tipo, y ofrece herramientas para cargar currículums y recibir alertas de nuevos trabajos.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Glassdoor" class=" link-a" href="https://www.glassdoor.com/index.htm" target="_blank" >
+                        Glassdoor
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/GLASSDOORLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Proporciona listados de empleos, reseñas de empresas, información sobre salarios y preguntas de entrevistas. Es útil para investigar empresas y obtener una visión completa del entorno laboral en diferentes países.</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Monster" class=" link-a" href="https://www.monster.com/" target="_blank" >
+                        Monster
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/MONSTERLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una bolsa de empleo global que ofrece oportunidades laborales en una variedad de sectores. Permite a los usuarios buscar empleos, subir currículums y recibir alertas de trabajos nuevos.</p>
+                    </div>
+                    
+                  </div>
+      
+                </div>
+      
+      
+      
+              </div>
+      
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="CareerBuilder" class=" link-a" href="https://www.careerbuilder.com/regional_sites" target="_blank" >
+                        CareerBuilder
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/CAREERBUILDERLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma internacional que ofrece una extensa base de datos de empleos. Los usuarios pueden buscar oportunidades laborales, crear perfiles y recibir recomendaciones basadas en sus habilidades y experiencias.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="SimplyHired" class=" link-a" href="https://www.simplyhired.com/" target="_blank" >
+                        SimplyHired
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/SIMPLYHIRELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo que proporciona listados internacionales de trabajos en diversas industrias. Permite buscar empleos por ubicación, tipo y salario.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="ZipRecruiter" class=" link-a" href="https://www.ziprecruiter.co.uk/" target="_blank" >
+                          ZipRecruiter
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ZIPRECRUITERLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma que distribuye ofertas de empleo en múltiples sitios web y redes sociales. Permite a los usuarios buscar empleos, crear alertas y recibir recomendaciones de trabajos basadas en su perfil.</p>
+                    </div>
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="FlexJobs" class=" link-a" href="https://www.flexjobs.com/" target="_blank" >
+                        FlexJobs
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/FLEXJOBSLOGO.jpg" class="animated-image" alt="Logo" width="130" height="100">
+                    <div class="container my-4">
+                      <p>Se especializa en trabajos flexibles, incluyendo trabajos remotos, de medio tiempo y freelance. Ofrece una curaduría de empleos para garantizar que las oportunidades sean legítimas y de alta calidad.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+  
+  
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Adzuna" class=" link-a" href="https://www.adzuna.com/" target="_blank" >
+                        Adzuna
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ADZUNALOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es una plataforma de búsqueda de empleo que opera a nivel global. Agrega ofertas de trabajo de diversas fuentes y permite buscar empleos por ubicación y sector.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Jooble" class=" link-a" href="https://jooble.org/" target="_blank" >
+                        Jooble
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/JOOBLELOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Es un motor de búsqueda de empleo que agrega ofertas de trabajo de diferentes fuentes a nivel global. Ofrece una amplia gama de oportunidades laborales y permite buscar empleos por ubicación y categoría.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="TheLadders" class=" link-a" href="https://www.theladders.com/" target="_blank" >
+                        TheLadders
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div> 
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/LADDERSLOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+                    <div class="container my-4">
+                      <p>Se enfoca en oportunidades laborales para profesionales con altos ingresos. Ofrece listados de empleos, herramientas de búsqueda avanzadas y recursos para la gestión de carrera.</p>
+                    </div>
+                    
+                  </div>
+      
+                
+                  <div class="col">
+                    
+                    <div class="container my-4">
+
+                      <a id="Talent" class=" link-a" href="https://co.talent.com/" target="_blank" >
+                        Talent.com
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+                    
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/TALENTLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                      <p>Ofrece una plataforma global para buscar empleos, agregando ofertas de diversas fuentes y proporcionando herramientas para buscar oportunidades laborales por ubicación y sector.</p>
+                    </div>
+                    
+                  </div>
+                  
+      
+                </div>
+      
+              </div>
+  
+              <div class="row">
+                
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="AngelList" class=" link-a" href="https://www.angellist.com/" target="_blank" >
+                        AngelList
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/ANGELISTLOGO.png" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                      <p>Es una plataforma que conecta a startups con talentos globales. Ofrece oportunidades laborales en startups tecnológicas y permite buscar empleos en empresas emergentes.</p>
+                    </div>
+                    
+                  </div>
+      
+                  
+                  <div class="col">
+
+                    <div class="container my-4">
+
+                      <a id="Remotive" class=" link-a" href="https://remotive.com/" target="_blank" >
+                        Remotive
+                        <i class="bi bi-arrow-right-square-fill icon-link-i"></i>
+                      </a>
+
+                    </div>
+
+                    <img src="Assets -Activos/Img -Imagenes/LOGOS/REMOTIVELOGO.jpg" class="animated-image" alt="Logo" width="100" height="100">
+
+                    <div class="container my-4">
+                     <p>Se especializa en trabajos remotos a nivel global. Ofrece listados de trabajos en áreas como tecnología, marketing y soporte, y proporciona recursos para quienes buscan trabajar de manera remota.</p>
+                    </div>
+                  </div>
+                  
+      
+                </div>
+      
+      
+                <div class="row col-md-6 col-lg-6 col-xl-6">
+      
+                  <!--
+                  <div class="col">
+                    <a href="" target="_blank">Stack Overflow Jobs</a>
+                    <img src="Assets -Activos/Img -Imagenes/" class="rounded mx-auto d-block" alt="Logo" width="100" height="100">
+                    <p>p</p>
+                  </div>
+      
+                  
+                  <div class="col">
+                    <a href="https://www.totaljobs.com/"target="_blank"> Remotive</a>
+                    <img src="Assets -Activos/Img -Imagenes/Totaljobs.png" class="rounded mx-auto d-block" alt="Logo" width="100" height="100">
+                    <p>Es otra bolsa de empleo relevante en el Reino Unido. Ofrece una amplia gama de empleos en diversos sectores y herramientas para facilitar la búsqueda y postulación a trabajos.</p>
+                  </div>
+                  -->
+      
+                </div>
+      
+              </div>
+      
+      
+            </div> 
+          </section>
+        </div>
+
+    </main>
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->
+    
+
+    <!-----------------------------------------------------FOOTER------------------------>
+    <!----------------------------------------------------------------------------------->
+    <div class="navbar-dark container my-4 container-custom-derecha">      
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container"> <!-- Contenedor principal del footer -->
+          <div class="footer-info"> <!-- Información general del footer -->
+              <div class="footer-logo"> <!-- Sección del logo -->
+                  <img src="Assets -Activos/Img -Imagenes/logofinalfinal__1_-removebg-preview.png" alt="Logo" width="40" height="100" class="footer-logo-img"> <!-- Imagen del logo -->
+                  <p>&copy; 2024 Freelancer (Jhon Stid Roa). Todos los derechos reservados.</p> <!-- Texto de derechos reservados -->
+              </div>
+
+              <div class="footer-contact"> <!-- Información de contacto -->
+                  <h3>Contáctato</h3> <!-- Título de la sección de contacto -->
+                  <p>Email: <a href="mailto:info@empresa.com">Jhonkess@hotmail.com</a></p> <!-- Enlace para enviar un correo electrónico -->
+                  <p>Teléfono: <a href="tel:+123456789">304 467 82 76</a></p> <!-- Enlace para realizar una llamada telefónica -->
+              </div>
+          </div>
+          <div class="footer-newsletter"> <!-- Sección de suscripción al boletín -->
+              <h3>Notificacion De Servicio</h3> <!-- Título de la sección de suscripción -->
+
+   
+
+             <!-- <form action="enviar.php" method="post">
+                <input type="text" name="name" id="name" class="name" placeholder="Nombre">
+                <input type="text" name="mail" id="mail" class="email" placeholder="Correo">
+                <input type="text" name="Phone" id="subject" class="subject" placeholder="Celular">
+                <input type="text" name="name" id="name" class="name" placeholder="Nombre">
+                <textarea name="message" id="message" placeholder="Mensaje.." id="message" ></textarea>
+
+                <div class="clear"></div>
+                  <div class="col-md-8">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <label>
+                      <input type="checkbox" name="acepto" value="acepto">-->
+                       <!--<font color="#ECECEC"> He leidi terminos y condiciones del 
+                        <a href=""><u><font color="#C2FBF3">Aviso de privacidad</font></u></a>--->
+                   <!-- </label>
+                  </div>
+              </form>-->
+              <div class="contact-form">
+                <h1>Formulario de Contacto</h1>
+                <form action="https://formsubmit.co/leydyt03@gmail.com" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+
+          </div>
+      </div>
+  </footer>
+
+    </div>
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->   
+
+
+
+
+
+
+
+    
+  <!---------------------------------->
+  <!--OK HASTA AQUI CON RESPONSIVE-->
+  <!---------------------------------->
+ <h1>prueba cambio</h1>
+
+  
+
+<!------------------------------JLIBRERIA BOOSTRAP JAVASCRIPT------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!--permite funcionalidades multiple para dispositivos en este caso hace que el menu de navegacion pueda desplazarse cuando este en un dispositivo pequeño,y sirve para mas funcionalidades a nivel general que se hallan construido con java scritp en linea-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+
+<!--permite funcionalidades multiple para dispositivos en este caso hace que el menu de navegacion pueda desplazarse cuando este en un dispositivo pequeño,y sirve para mas funcionalidades a nivel general que se hallan construido con java scritp local-->
+<script src="Assets(activos)/Vendor(recursos externos)/Boostrap(Librerias css y javascript)/Libreria javascritp/bootstrap.bundle.min.js"></script>
+
+</body>
+<!------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------>
+
+</html>
