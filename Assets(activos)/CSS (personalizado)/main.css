@@ -481,6 +481,7 @@
 /*contenedores imagen*/
 .contenedor-imagen {
     height: 300px;      /* Ajusta la altura */
+    width: 300px;
 }
 
  /*imagenes de contenedores*/
