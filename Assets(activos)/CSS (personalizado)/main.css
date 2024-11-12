@@ -486,8 +486,8 @@
 
  /*imagenes de contenedores*/
 .img-grande {
-    width: 50%;   /* Ajusta el ancho */
-    height: 50%;    /* Ajusta la altura */
+    width: 100%;   /* Ajusta el ancho */
+    height: 100%;    /* Ajusta la altura */
     object-fit: cover;  /* Mantiene las proporciones sin deformar */
 
 }
