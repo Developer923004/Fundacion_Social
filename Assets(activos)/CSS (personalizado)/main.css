@@ -4,6 +4,152 @@
   /* ************************************************************************************************** */
 
 
+  /* *****************************GENERAL PARA TODAS LAS PAGINAS*************************************** */
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */ 
+ 
+    /*---------------------------------------------------------------------------------------*/
+    /*--------------------------------------------------SLOGAN LOGO--------------------------*/       /*OK*/
+    .brand-text {
+        font-family: serif;  /*tipo de letra*/
+        /*font-size: 14px;   /* Ajusta el tamaño del texto */
+        font-weight: bold;   /*NEGRILLA */
+        color: #EC1480;       /* Color oscuro para el texto */
+        line-height: 1.2;    /* Ajusta la altura de línea para mejorar la legibilidad */
+    }
+
+    /* ajustamo el texto en dispositivos mas pequeño */
+    .brand-text {
+        font-size: 14px;          /* tamaño de texto */
+    }
+
+    /* Alineamos el texto del logo en dispositivos pequeños ala izquierda */
+    @media (max-width: 767px) {
+        .navbar-brand {
+        justify-content: left;  /* Alineamos el logo y el texto ala izquierda en pantallas pequeñas */
+        }
+    }
+
+
+    /*---------------------------------------------------------------------------------------*/
+    /*--------------------------------------------------MENU PARA TODOS LAS PAGINAS----------*/
+    /*-------------lista ordenada*/
+    .nav-item {
+        font-family: serif;  /*tipo de letra*/
+        font-size: 20px;          /* Tamaño del texto */
+        color: #80AFCD;           /* Color de texto gris oscuro similar al navbar-light */
+        transition: color 0.3s ease; /* Efecto de transición para suavizar el cambio de color al pasar el mouse */
+    }
+    .nav-item:hover {
+        color:#80AFCD;           /* Color de texto azul para el efecto hover */
+    }
+
+
+    /*----------------links*------------------------------*/
+    .nav-link {
+        font-weight: bold;        /* Negrita */
+        color: #80AFCD;  
+    }
+
+    /*elementos del menú */
+    .navbar-nav .nav-link {
+        color: #80AFCD;         /* Color del texto*/
+        padding: 10px 20px;       /* Espaciado interno para los enlaces */
+        text-decoration: none;    /* Elimina el subrayado del enlace */
+    }
+
+    /* Efecto al pasar el ratón (hover) sobre los enlaces del menú */
+    .navbar-nav .nav-link:hover {
+        color: #EC1480;           /* El texto sigue siendo blanco */
+        border-radius: 5px;        /* Bordes redondeados en el fondo */
+    }       
+
+
+     /*---------------------------------------------------------------------------------------*/
+   /*--------------------------------------FOOTER--------------------------------------------*/
+   /*div footer*/
+   .footer {
+        background-color:  #FFFFFF; /* Fondo */
+    }
+    
+    /*logo de footer*/
+    .footer-logo-img {
+        max-width: 100px; /* Logo más pequeño */
+        margin-bottom: 10px; /*espacio debajo*/
+    }
+    
+    /*subtitulos de footer*/
+    h5 {
+        font-family: Serif - 'Times New Roman', Times, serif;  /*tipo de letra*/
+        font-size: 20px;
+        color: #EC1480; /* colortexto  */
+    }
+
+    /*parrafos y links de footer junto al hiperenlace*/
+    .footer-contact p,
+    .footer-links a {
+        color: #80AFCD; /* Color texto */
+        font-family: Serif - Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+    }
+    
+    /*link hiperenlaces*/
+    .footer-contact p a,
+    .footer-links a {
+        color: #80AFCD; /* Color texto hiperenlace */
+        font-family: Serif - Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+        text-decoration: none; /*quita el decorado del hiperenlace por defecto*/
+        transition: color 0.3s ease; /*suavidad al pasar por encima con el mouse*/
+    }
+    
+    /*animacion al pasar con el mouse parrafos y hiperenlaces*/
+    .footer-contact p a:hover,
+    .footer-links a:hover {
+        color: #EC1480; /* colortexto al psar con el mouse hover */
+    }
+    
+    /*listas de linlks*/
+    .footer-links ul {
+        padding: 0; /*espacio interno*/
+        list-style: none;
+    }
+    .footer-links ul li {
+        margin: 5px 0; /*margen*/
+    }
+
+    /*botno para regresar al principio*/
+    .footer .btn-floating {
+        border-radius: 50%;               /* Hace el botón circular */
+        background-color: transparent;  /* Fondo transparente */
+        color: #80AFCD;                     /* Flecha de color negro */
+        padding: 15px;                    /* Aumenta el tamaño del botón */
+        font-size: 24px;                  /* Ajusta el tamaño del ícono de la flecha */
+        display: flex;                    /* Usado para centrar el contenido */
+        justify-content: center;          /* Centra el contenido (flecha) horizontalmente */
+        align-items: center;              /* Centra el contenido (flecha) verticalmente */
+
+    }
+    
+    .footer .btn-floating i {
+        font-size: 1rem;                /* Ajusta el tamaño de la flecha */
+    }
+    
+    .footer .btn-floating:hover {
+        background-color: transparent;  /* Fondo transparente */
+        color: #80AFCD;                     /* Cambia la flecha a blanca en hover */
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+    }
+    
+
+ /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
   /* *****************************INDEX.HTML************************************************************ */
 
 
@@ -11,66 +157,6 @@
   /* ************************************************************************************************** */    
   /* ************************************************************************************************** */
   /* ************************************************************************************************** */
-
-
-/*---------------------------------------------------------------------------------------*/
-/*--------------------------------------------------SLOGAN LOGO--------------------------*/
-.brand-text {
-    /*font-size: 14px;   /* Ajusta el tamaño del texto */
-    font-weight: bold;   /*NEGRILLA */
-    color: #b7d6f7;       /* Color oscuro para el texto */
-    line-height: 1.2;    /* Ajusta la altura de línea para mejorar la legibilidad */
-  }
-
-/* ajustamo el texto en dispositivos mas pequeño */
-.brand-text {
-    font-size: 14px;          /* tamaño de texto */
-  }
-
-  /* Alineamos el texto del logo en dispositivos pequeños ala izquierda */
-  @media (max-width: 767px) {
-    .navbar-brand {
-      justify-content: left;  /* Alineamos el logo y el texto ala izquierda en pantallas pequeñas */
-    }
-  }
-
-
-
-
-
-/*---------------------------------------------------------------------------------------*/
-/*--------------------------------------------------MENU---------------------------------*/
-/*-------------lista ordenada*/
-.nav-item {
-    font-size: 20px;          /* Tamaño del texto */
-    color: #b7d6f7;           /* Color de texto gris oscuro similar al navbar-light */
-    transition: color 0.3s ease; /* Efecto de transición para suavizar el cambio de color al pasar el mouse */
-}
-.nav-item:hover {
-    color:#b7d6f7;           /* Color de texto azul para el efecto hover */
-}
-
-
-/*----------------links*------------------------------*/
-.nav-link {
-    font-weight: bold;        /* Negrita */
-    color: #b7d6f7;  
-}
-
-/*elementos del menú */
-.navbar-nav .nav-link {
-    color: #b7d6f7;         /* Color del texto*/
-    padding: 10px 20px;       /* Espaciado interno para los enlaces */
-    text-decoration: none;    /* Elimina el subrayado del enlace */
-}
-
-/* Efecto al pasar el ratón (hover) sobre los enlaces del menú */
-.navbar-nav .nav-link:hover {
-    color: #007bff;           /* El texto sigue siendo blanco */
-    border-radius: 5px;        /* Bordes redondeados en el fondo */
-}
-
-
 
 /*---------------------------------------------------------------------------------------*/
 /*--------------------------------------CARROUSEL----------------------------------------*/
@@ -93,6 +179,7 @@
     margin: 0 0 20px 0; /* Espaciado entre los elementos */
     white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
     font-size: 30px;
+    font-family: Serif - Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
   }
   
   /* h1 dentro del carrusel */
@@ -100,6 +187,7 @@
         margin: 0 0 60px 0; /* Espaciado entre los elementos */
         white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
         font-size: 80px;
+        font-family: Serif; /*tipo de letra*/
   }
 
   /* button dentro del carrusel */
@@ -110,11 +198,13 @@
 
   }
 
-  /* Estilo para los botones */
-  .carousel-caption .btn {
+  /* botone */
+  .carousel-caption .btn  {
     padding: 10px 20px; /* Ajuste de tamaño de los botones */
     font-size: 16px; /* Tamaño de la fuente del botón */
-    background-color: #C5D3E8; /*fondo del boton*/
+    background-color: #80AFCD; /*fondo del boton*/
+    font-family: Serif - Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+ 
   }
   
   /* Opcional: Asegura que el texto se vea bien en pantallas pequeñas */
@@ -128,14 +218,23 @@
     }
   }
 
+  /* anmacionpara los botones */
+  .carousel-caption .btn:hover {
+    padding: 10px 20px; /* Ajuste de tamaño de los botones */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    background-color: #80AFCD; /*fondo del boton*/
+    font-family: Serif - Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+    color: #EC1480;
+  }
+
 
   /* botones anterior y siguiente-------------------------------------*/
 
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
         top: 50%;
-        background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
-        color: white; /* Íconos en color blanco */
+        background: #80AFCD; /* Fondo oscuro semi-transparente */
+        color: #EC1480; /* Íconos en color blanco */
         padding: 12px; /* Padding adecuado para los botones */
         text-align: center; /* Centra el texto dentro de los botones */
         width: 40px; /* Tamaño del botón */
@@ -150,14 +249,14 @@
     
     /* efecto hover */
     .carousel-control-prev:hover, .carousel-control-next:hover {
-        background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el mouse */
+        background: #EC1480; /* Fondo más oscuro al pasar el mouse */
     }
     
     /*íconos predeterminados de Bootstrap */
     .carousel-control-prev-icon, .carousel-control-next-icon {
         background-color: transparent; /* Fondo transparente */
         font-size: 1.5rem; /* Tamaño de los íconos */
-        color: white; /* Color blanco para las flechas */
+        color: #FFFFFF; /* Color blanco para las flechas */
     }
     
     /* Ajustes para pantallas pequeñas */
@@ -171,86 +270,213 @@
     }
   
 
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+  /* *****************************ACERCA.HTML************************************************************ */
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+/*-------------------titulo y parrafo subtitulo-------*/
+
+/*div tituloo y subparrafo*/
+.inicial {
+    border: 1px solid black;  /* Borde sólido de 2px de grosor y color negro */
+    border-radius: 8px;        /* Redondea las esquinas */
+    padding: 20px;             /* Espaciado interno para que el contenido no quede pegado al borde */
+    margin: 20px 0;            /* Opcional: Espaciado entre las filas, puedes ajustar el valor */
+}
+
+/* título h1 y parrafo inicial */
+.titulo , .parrafo{
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
+    color: #EC1480; /*color texto*/
+    font-weight: bold;   /*NEGRILLA */
+}
+
+
+
+/*-------------------carrusel actividades y charlas-------*/
+
+/*carrusel "actividades" */
+.carousel-actividades, .carousel-charlas {
+    position: relative;  /*posicion*/
+    margin-bottom: 20px; /*espacio debajo*/
+    border-radius: 8px;  /*borde*/
+    overflow: hidden;    /*oculta*/
+}
+
+
+/*imagenes carruceles*/
+
+/* Ajustar las imágenes del carrusel "actividades" y "charlas" */
+.carousel-actividades img, .carousel-charlas img {
+    object-fit: cover; /*pososcion correcta de imagenes*/
+    height: 400px; /*altura de imagenes*/
+    border-radius: 300px; /* Bordes redondeados de forma más sutil en los 4 lados */
+}
+
+/* títulos dentro del carrusel "actividades"y "charlas" */
+h1  {
+    font-family: serif;  /*tipo de letra de los titulos actividades y charlas*/
+    font-size: 30px; /*tamaño de letra*/
+    margin-top: 15px; /*margen parte superor*/
+    color: #EC1480; /*color texto*/
+    text-align: center; /* Centrado del texto del título */
+}
+
+
+/* títulos dentro del carrusel "actividades"y "charlas" */
+.carousel-actividades h2, .carousel-charlas h2  {
+    font-family: serif;  /*tipo de letra de los titulos actividades y charlas*/
+    font-size: 24px; /*tamaño de letra*/
+    margin-top: 15px; /*margen parte superor*/
+    color: #EC1480; /*color texto*/
+    text-align: center; /* Centrado del texto del título */
+}
+
+
+
+.descripcion-acerca{
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #80AFCD; /*color texto*/  
+    text-align: justify;   /* Justifica el texto */
+    word-wrap: break-word;    /* Permite que las palabras largas se dividan */
+    overflow-wrap: break-word;  /*permite que las palabras largas se dividan */
+    line-height: 1.6;  /* espacio entre líneas */
+    margin: 0 20px; /*esoacio interno */
+
+}
+
+
+
+/* botones "¡Aquí puedes donar!" en el carrusel activides y charlas */
+.btn {
+    background-color: #EC1480;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;  /* Para que el botón se centre */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.btn:hover {
+    background-color: #80AFCD;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+  /* *****************************MISION.HTML************************************************************ */
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+/*contenedores*/
+.contenedor1, .contenedor2 {
+    /* Estilos específicos para el contenedor */
+    padding: 20px; /*espacio interno*/
+    background-color: #FFFFFF; /*fondo */
+    height: 100%; /*altura*/
     
 
-
-    /*---------------------------------------------------------------------------------------*/
-   /*--------------------------------------FOOTER--------------------------------------------*/
-
-/*footer principal*/
-.footer {
-    color: black; /* Color del texto footer */
-    padding: 40px 20px; /* Espaciado interno del footer */
-    background-color: #ffffff; /* Color fondo footer */
-}
-/*sección de información en el footer */
-.footer-info {
-    text-align: center; /* Espaciado a la derecha del elemento */
-    color: #f572cb;
-    margin-top: 50px;
 }
 
-/*sección del logo en el footer */
-.footer-logo {
-    margin-top: 30px; /* Espaciado encima del logo */
-    margin-bottom: 50px; /* Espaciado debajo del logo */
+/*contenedores imagen*/
+.contenedor-imagen {
+    height: 300px;      /* Ajusta la altura */
+    
 }
 
-/*imagen del logo */
-.footer-logo-img {
-    height: 50%;/* alto fijo para la imagen del logo */
-    width: 50%; /* Ancho fijo para la imagen del logo */
-    margin-bottom: 10%; /* Espaciado debajo de la imagen del logo */
+ /*imagenes de contenedores*/
+.img-grande {
+    width: 100%;   /* Ajusta el ancho */
+    height: 100%;    /* Ajusta la altura */
+    object-fit: cover;  /* Mantiene las proporciones sin deformar */
+
 }
 
-/*navegación en el footer */
-.footer-nav ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
+/*parrafos mision*/
+.descripcion-mision {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #80AFCD; /*color texto*/  
+    text-align: justify;   /* Justifica el texto */
+    word-wrap: break-word;    /* Permite que las palabras largas se dividan */
+    overflow-wrap: break-word;  /*permite que las palabras largas se dividan */
+    line-height: 1.6;  /* espacio entre líneas */
+    margin: 0 20px; /*esoacio interno */
+
 }
 
-/*sección de contacto en el footer */
-.footer-contact {
-    margin-top: 20px; /* Espaciado arriba de la sección de contacto */
-  
+
+/* parrafos mision */
+.descripcion-p {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;              /* Justifica el texto para alinearlo a ambos márgenes */
+    word-wrap: break-word;            /* Permite que las palabras largas se dividan y ajusten al contenedor (para navegadores antiguos) */
+    overflow-wrap: break-word;        /* Alternativa moderna a 'word-wrap' que también permite que las palabras largas se dividan */
+    line-height: 1.6;                 /* Mejora la legibilidad añadiendo espacio entre líneas */
+    margin: 0 20px;                   /* Opcional: Añade márgenes para que el texto no quede pegado al borde del contenedor */
+    color: #EC1480; /*color texto*/    
+
+}
+/*frase*/
+.quote {
+    font-style: italic; /*tipo de letra*/
+    color: #333; /*color texto*/
 }
 
-/* Estilos para los enlaces en la sección de contacto */
-.footer-contact a {
-    color: black; /* Color del texto blanco para los enlaces */
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+  /* *****************************CONTACTO.HTML************************************************************ */
+
+
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */    
+  /* ************************************************************************************************** */
+  /* ************************************************************************************************** */
+
+
+.FORMULARIOCONTACTO {
+    width: 50%;
 }
 
-/* Estilo para los enlaces de contacto cuando el usuario pasa el ratón sobre ellos */
-.footer-contact a:hover {
-    text-decoration: underline; /* Añade un subrayado al pasar el ratón */
-    color: #eda0d5;
-}
-
-/* Estilos para la sección de suscripción al boletín */
-.footer-newsletter {
-    flex: 1; /* Permite que este elemento ocupe el espacio disponible */
-    max-width: 400px; /* Ancho máximo de la sección de suscripción */
-}
-
-/* Estilo para el título de la sección de suscripción al boletín */
-.footer-newsletter h3 {
-    margin-bottom: 10px; /* Espaciado debajo del título */
-}
-
-/* Estilos para el formulario de suscripción al boletín */
-.footer-newsletter form {
-    display: flex; /* Usa Flexbox para el diseño del formulario */
-    flex-direction: column; /* Organiza los elementos del formulario en una columna */
-}
-
-/* Estilos para el campo de entrada del formulario de suscripción */
-.footer-newsletter input {
-    padding: 10px; /* Espaciado interno del campo de entrada */
-    margin-bottom: 10px; /* Espaciado debajo del campo de entrada */
-    border: none; /* Elimina el borde predeterminado del campo de entrada */
-    border-radius: 4px; /* Bordes redondeados en el campo de entrada */
-    width: 100%;
-}
 
 /*-------------------formulario------------------*/
 
@@ -264,11 +490,13 @@
 
   /*textos de formulario y label */
   h1 {
+    font-family: serif ;
     text-align: center;  /*alineacion texto al centro*/
     color: #eda0d5; /*color texto*/
   }
   /*titulos de los campos a ingresar informacion*/
   label {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;  /*tamaño de letra*/
     margin-bottom: 5px; /*espacio en la parte interna*/
     color: #eda0d5;  /*color texto*/
@@ -297,6 +525,7 @@
 
   /*mensajes de error */
   .error-message {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
     color: red;  /*color texto mensage de texto*/
     font-size: 12px; /*tamaño de letra mensaje de error*/
     display: none; /* Los mensajes de error están ocultos inicialmente */
@@ -305,6 +534,7 @@
 
   /*mensaje de éxito */
   .success-message {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
     color: green; /*color mensaje de exito*/
     font-size: 14px; /*tamaño de letra de mensaje de exito*/
     margin-top: 20px; /*marge*/
@@ -314,11 +544,9 @@
 
 
 
-    /* Estilo flotante para el botón en la esquina inferior derecha */
-       /* Estilo flotante para el botón en la esquina inferior derecha */
-/* Estilo flotante para el botón en la esquina inferior derecha */
-/* Estilo flotante para el botón en la esquina inferior derecha */
+/* botón formulario */
 .btn-floating {
+    font-family: serif - Georgia, 'Times New Roman', Times, serif;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -337,178 +565,5 @@
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más grande al hacer hover */
     cursor: pointer;
   }
-  
-  
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */    
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */
-
-
-  /* *****************************ACERCA.HTML************************************************************ */
-
-
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */    
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */
-
-
-  /*---------------------------------------------------------------------------------------*/
-/*--------------------------------------------------ROW PRINCIAPL--------------------------*/
-                                       
-/*-------------------rows generales-------------------*/
-
-
-/* generales totas las row */
-.row {
-    margin-top: 40px;  /* Espaciado superior */
-
-}
-
-
-/*-------------------titulo y parrafo subtitulo-------*/
-
-/*div tituloo y subparrafo*/
-.inicial {
-    border: 1px solid black;  /* Borde sólido de 2px de grosor y color negro */
-    border-radius: 8px;        /* Redondea las esquinas */
-    padding: 20px;             /* Espaciado interno para que el contenido no quede pegado al borde */
-    margin: 20px 0;            /* Opcional: Espaciado entre las filas, puedes ajustar el valor */
-}
-
-/* título h1 y parrafo inicial */
-.titulo , .parrafo{
-    color: #eda0d5; /*color texto*/
-    font-weight: bold;   /*NEGRILLA */
-}
-
-
-
-/*-------------------carrusel actividades y charlas-------*/
-
-/*carrusel "actividades" */
-.carousel-actividades, .carousel-charlas {
-    position: relative;  /*posicion*/
-    margin-bottom: 20px; /*espacio debajo*/
-    border-radius: 8px;  /*borde*/
-    overflow: hidden;    /*oculta*/
-}
-
-
-/*imagenes carruceles*/
-
-/* Ajustar las imágenes del carrusel "actividades" y "charlas" */
-.carousel-actividades img, .carousel-charlas img {
-    object-fit: cover; /*pososcion correcta de imagenes*/
-    height: 400px; /*altura de imagenes*/
-    border-radius: 300px; /* Bordes redondeados de forma más sutil en los 4 lados */
-}
-
-/* títulos dentro del carrusel "actividades"y "charlas" */
-.carousel-actividades h2, .carousel-charlas h2  {
-    font-family: 'Arial', sans-serif;  /*tipo de letra de los titulos actividades y charlas*/
-    font-size: 24px; /*tamaño de letra*/
-    font-weight: bold; /*negrilla*/
-    margin-top: 15px; /*margen parte superor*/
-    color: #333; /*color texto*/
-    text-align: center; /* Centrado del texto del título */
-}
-
-/* parrafos dentro del carrusel "actividades y""charlas" */
-.descripcion-p {
-    text-align: justify;              /* Justifica el texto para alinearlo a ambos márgenes */
-    word-wrap: break-word;            /* Permite que las palabras largas se dividan y ajusten al contenedor (para navegadores antiguos) */
-    overflow-wrap: break-word;        /* Alternativa moderna a 'word-wrap' que también permite que las palabras largas se dividan */
-    font-weight: bold;                /* Aplica negrita al texto */
-    line-height: 1.6;                 /* Mejora la legibilidad añadiendo espacio entre líneas */
-    margin: 0 20px;                   /* Opcional: Añade márgenes para que el texto no quede pegado al borde del contenedor */
-}
-
-/* Estilo para los botones "¡Aquí puedes donar!" en el carrusel activides y charlas */
-.carousel-actividades .btn , .carousel-charlas .btn {
-    background-color: #eda0d5;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
-    display: block;  /* Para que el botón se centre */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.carousel-actividades .btn:hover ,.carousel-charlas .btn:hover {
-    background-color: #f867ca;
-    transition: background-color 0.3s ease-in-out;
-}
-
-
-
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */    
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */
-
-
-  /* *****************************MISION.HTML************************************************************ */
-
-
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */    
-  /* ************************************************************************************************** */
-  /* ************************************************************************************************** */
-
-
-  /*---------------------------------------------------------------------------------------*/
-/*--------------------------------------------------ROW PRINCIAPL--------------------------*/
-                                       
-
-
-/*contenedores*/
-.contenedor1, .contenedor2 {
-    /* Estilos específicos para el contenedor */
-    padding: 20px; /*espacio interno*/
-    background-color: white; /*fondo */
-    height: 100%; /*altura*/
-    
-
-}
-
-/*contenedores imagen*/
-.contenedor-imagen {
-    height: 300px;      /* Ajusta la altura */
-    
-}
-
- /*imagenes de contenedores*/
-.img-grande {
-    width: 100%;   /* Ajusta el ancho */
-    height: 100%;    /* Ajusta la altura */
-    object-fit: cover;  /* Mantiene las proporciones sin deformar */
-
-}
-
-/*parrafos de contenedores*/
-.descripcion-mision {
-    font-size: 20px;
-    text-align: justify;   /* Justifica el texto */
-    word-wrap: break-word;    /* Permite que las palabras largas se dividan */
-    overflow-wrap: break-word;  /*permite que las palabras largas se dividan */
-    font-weight: bold;       /* negrilla */
-    line-height: 1.6;  /* espacio entre líneas */
-    margin: 0 20px; /*esoacio interno */
-
-}
-
-/*frase*/
-.quote {
-    font-style: italic; /*tipo de letra*/
-    color: #333; /*color texto*/
-}
-
 
 

@@ -93,7 +93,7 @@
               </li>
               <!-- Enlace de la sección "Contacto" -->
               <li class="nav-item">
-                <a class="nav-link " href="#pie">Contacto</a>
+                <a class="nav-link " href="Contacto.html">Contacto</a>
               </li>
               <!-- Enlace de la sección "Donaciones" -->
               <li class="nav-item">
@@ -172,85 +172,59 @@
     <!-----------------------------------------------------FOOTER------------------------>
     <!----------------------------------------------------------------------------------->
       <!-- Footer -->
-      <footer id="pie" class="footer">
-
-          <!--insertamos fila-->
-          <div class="row">
-
-              <!--segmentamos fila en dispositivos-->
-              <div class="col-sm-12 col-md-8 col-xxl-8 col-xl-8 col-lg-8">
-                
-                <div > <!-- Sección de suscripción al boletín -->
-                  
+          <footer id="pie" class="footer  text-white py-3">
+            <div class="container">
+              <div class="row">
           
-                  <!-- Formulario de contacto -->
-                  <div class="contact-form">
-                    <h1>Formulario de Contacto</h1>
-                    <!---tramitador de formulario hacia el correo-->
-                    <form id="contact-form" action="https://formsubmit.co/jhonkess@hotmail.com" method="POST" onsubmit="return validarFormulario(event)">
-                      
-                      <!--campo nombre-->
-                      <label  for="nombre">Nombre:</label><br>
-                      <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre"><br>
-                      <!--capturador de mesaje error de nombre-->
-                      <span id="error-nombre" class="error-message"></span><br>
-                
-                      <!--campo correo-->
-                      <label for="correo">Correo electrónico:</label><br>
-                      <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo"><br>
-                       <!--capturador de mesaje error de nombre-->
-                      <span id="error-correo" class="error-message"></span><br>
-                
-                      <!--campo mensaje-->
-                      <label for="mensaje">Mensaje:</label><br>
-                      <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ingrese la descripcion de su mensaje"></textarea><br>
-                       <!--capturador de mesaje error de nombre-->
-                      <span id="error-mensaje" class="error-message"></span><br>
-                
-                      <input type="submit" value="Enviar">
-                    </form>
-                    
-                    <div id="success-message" class="success-message">
-                      El correo ha sido enviado exitosamente a <strong>jhonkess@hotmail.com</strong>.
-                    </div>
-                  </div>
-                
-
-                </div>
-
-
-             </div>
-
-              <!--segmentamos fila en dispositivos-->
-              <div class="col-sm-12 col-md-4 col-xxl-4 col-xl-4 col-lg-4">
-                <div class="footer-info"> <!-- Información general del footer -->
-                  <div class="footer-logo"> <!-- Sección del logo -->
-                      <img src="Assets(activos)/Logos/logo.jpg"  href="#Inicio"  alt="Logo" class="footer-logo-img"> <!-- Imagen del logo -->
-                      
-                  </div>
-    
-                  <div class="footer-contact"> <!-- Información de contacto -->
-                      <h3>Contáctato</h3> <!-- Título de la sección de contacto -->
-                      <p>Email: <a href="mailto:jhonkess@hotmail.com">correo@dominio.com</a></p> <!-- Enlace para enviar un correo electrónico -->
-                      <p>Teléfono: <a href="tel:+123456789">+57 000 000 00 00</a></p> <!-- Enlace para realizar una llamada telefónica -->
-                      <p>&copy; 2024 FundacionSocial (Talento Tech). Todos los derechos reservados.</p> <!-- Texto de derechos reservados -->
+                <!-- Sección de Logo (más pequeño) -->
+                <div class="col-4 col-md-4  text-center">
+                  <div class="footer-logo">
+                    <img src="Assets(activos)/Logos/logo.jpg" alt="Logo" class="footer-logo-img img-fluid">
                   </div>
                 </div>
-              </div>             
+          
+                <!-- Sección de Información de Contacto -->
+                <div class="col-4 col-md-4 mb-3 text-center text-md-left">
+                  <div class="footer-contact">
+                    <h5 class="mb-2" >Contáctanos</h5>
+                    <p>Email: <a href="mailto:jhonkess@hotmail.com" class="text-pink">correo@dominio.com</a></p>
+                    <p>Teléfono: <a href="tel:+123456789" class="text-pink">+57 000 000 00 00</a></p>
+                  </div>
+                </div>
+          
+                <!-- Sección de Enlaces -->
+                <div class="col-4 col-md-4 mb-3 text-center text-md-right">
+                  <div class="footer-links">
+                    <h5 class="mb-2">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="Mision.html" class="text-pink">Nuestra Misión</a></li>
+                      <li><a href="Acerca.html" class="text-pink">Conocenos</a></li>
+                      <li><a href="Contacto.html" class="text-pink">Contacto</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
 
-          </div>
-      
-    
-          <a href="index.html">
-            <button class="btn btn-primary btn-floating" type="button">
-              <i class="bi bi-arrow-up" style="font-size: 30px;"></i> 
-            </button>
-          </a>
+                <!-- Sección de Derechos Reservados -->
+                <div class="text-center mt-4">
+                  <p style="color: #80AFCD;">&copy; 2024 Talento Tech (campus.talentotechbogota.co(Grupo 7)). Todos los derechos reservados.</p>
+                </div>
 
-       
-  
-
-    </footer>
+              </div>
+          
+              </div> <!-- End row -->
+            </div> <!-- End container -->
+          
+            <!-- Botón de Scroll Arriba -->
+            <div class="text-center">
+              <a href="#Inicio">
+                <button class="btn btn-pink btn-floating" type="button">
+                  <i class="bi bi-arrow-up" style="font-size: 30px;"></i> 
+                </button>
+              </a>
+            </div>
+          
+          </footer>
     <!----------------------------------------------------------------------------------->
     <!----------------------------------------------------------------------------------->   
 

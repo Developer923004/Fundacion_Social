@@ -118,7 +118,7 @@
         <!--contenedor de titulos y parrafos-->
         <div class="row text-center">
             <div class="col-xl-12 inicial">
-                <h1 class="titulo">FUNDACION SOCIAL PARA LA SALUD</h1> <!-- Se aplica la clase titulo -->
+                <h1 class="titulo">CONTACTANOS</h1> <!-- Se aplica la clase titulo -->
             </div>
         
             <div class="col-xl-12">
@@ -127,42 +127,50 @@
             </div>
         </div>
 
+              <!--segmentamos fila en dispositivos-->
+              <div class="col-sm-12 col-md-12 col-xxl-12 col-xl-12 col-lg-12 ">
+                
+                <div class="container   FORMULARIOCONTACTO"> <!-- Sección de suscripción al boletín -->
+                  
+          
+                  <!-- Formulario de contacto -->
+                  <div class="contact-form">
+                    <!---tramitador de formulario hacia el correo-->
+                    <form id="contact-form" action="https://formsubmit.co/jhonkess@hotmail.com" method="POST" onsubmit="return validarFormulario(event)">
+                      
+                      <!--campo nombre-->
+                      <label  for="nombre">Nombre:</label><br>
+                      <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre"><br>
+                      <!--capturador de mesaje error de nombre-->
+                      <span id="error-nombre" class="error-message"></span><br>
+                
+                      <!--campo correo-->
+                      <label for="correo">Correo electrónico:</label><br>
+                      <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo"><br>
+                       <!--capturador de mesaje error de nombre-->
+                      <span id="error-correo" class="error-message"></span><br>
+                
+                      <!--campo mensaje-->
+                      <label for="mensaje">Mensaje:</label><br>
+                      <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ingrese la descripcion de su mensaje"></textarea><br>
+                       <!--capturador de mesaje error de nombre-->
+                      <span id="error-mensaje" class="error-message"></span><br>
+                
+                      <input type="submit" value="Enviar">
+                    </form>
+                    
+                    <div id="success-message" class="success-message">
+                      El correo ha sido enviado exitosamente a <strong>jhonkess@hotmail.com</strong>.
+                    </div>
+                  </div>
+                
+
+                </div>
 
 
-        <!-- Contenedor 1: Imagen y Párrafo -->
-        <div class="row text-center contenedor1">
-            <div class="col-sm-12 col-md-4 col-lg-4 contenedor-imagen">
-                
-                    <img src="Assets(activos)/Imagenes/imagenfundacion4.jpg" class="img-grande " alt="Imagen Fundación">
-                
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-8">
-                <blockquote class="quote">
-                    <p>"Porque todos fuimos niños". Edison Llanos.</p>
-                </blockquote>
-                <h5 class="descripcion-p">Misión</h5>
-                <p class="descripcion-mision">
-                    Brindar un espacio seguro y accesible para fortalecer a niños, niñas y adolescentes en situación de vulnerabilidad, 
-                    facilitando su integración y desarrollo integral a través de una página web, buscando simplificar el acceso 
-                    a recursos, apoyo y oportunidades, promoviendo la inclusión y el bienestar de esta población en un entorno de apoyo y cuidado.
-                </p>
-            </div>
-        </div>
+             </div>
 
-        <!-- Contenedor 2: Imagen y Párrafo -->
-        <div class="row text-center contenedor2">
-            <div class="col-sm-12 col-md-8 col-lg-8">
-                <p class="descripcion-mision">
-                    Queremos abarcar la mayor cantidad de zonas vulnerables a nivel nacional e internacional, permitiendo sacar a los niños y jóvenes de las calles, ocupándoles su tiempo libre en actividades lúdico-educativas que les generen herramientas funcionales para su vida personal y profesional a futuro.
-                </p>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 contenedor-imagen">
-                
-                    <img src="Assets(activos)/Imagenes/imagenfundacion4.jpg" class="img-grande" alt="Imagen Fundación">
-                
-            </div>
-        </div>
-
+                     
 
     </main>
     <!----------------------------------------------------------------------------------->
@@ -225,6 +233,7 @@
         </div>
       
       </footer>
+
     <!----------------------------------------------------------------------------------->
     <!----------------------------------------------------------------------------------->   
 
