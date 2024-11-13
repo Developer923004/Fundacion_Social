@@ -163,6 +163,7 @@
 /*contenedor principal del carrusel --------------------------------------*/
   .carousel-item {
     position: relative;
+    max-width=100px;
   }
   
   /*contenido del carrusel (centrado) */
