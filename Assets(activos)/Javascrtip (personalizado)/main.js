@@ -82,3 +82,8 @@ function validarFormulario(event) {
     });
   }
   
+
+
+  ///////////////////////////////////////VALIDACION  FORMULARIO DONACIONES
+
+ 
