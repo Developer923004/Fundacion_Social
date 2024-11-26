@@ -1,5 +1,5 @@
-// profesor
-/*import mysql from 'mysql2'
+
+import mysql from 'mysql2'
 
 let conectar = mysql.createConnection({
     host: 'localhost',             // Servidor local
@@ -7,6 +7,7 @@ let conectar = mysql.createConnection({
     password: 'Fundacion2024*',    // Contraseña servidor
     database: 'fundacion_social'   // Base de datos servidor
 })
+
 
 conectar.connect(function (err){
     if(err){
@@ -16,4 +17,4 @@ conectar.connect(function (err){
 });
 
 export {conectar}
-*/
+

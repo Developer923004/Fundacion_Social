@@ -1,4 +1,4 @@
-/*import { conectar } from "../modelo/db_conectar.js";  // Importar la conexión a la base de datos
+import { conectar } from "../modelo/db_conectar.js";  // Importar la conexión a la base de datos
 
 let crud_cliente = {};  // Definir el objeto para CRUD
 
@@ -58,4 +58,3 @@ crud_cliente.cud = (req, res) => {
 };
 
 export { crud_cliente };
-*/

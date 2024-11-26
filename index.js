@@ -1,4 +1,8 @@
-/*import express from "express"
+//import express from "express"
+import express from "express"
+//const express = require("express");
+
+//app.set("view engine","ejs");
 
 import {crud_cliente} from "./controlador/crud_clientes.js"
 
@@ -11,11 +15,12 @@ app_e.listen('5000', function(){
 
 });
 
-app_e.use(express.static('./vistas'))
+
+app_e.use(express.static('./vista'))
 app_e.use(express.static('./controlador'))
 app_e.use(express.static('./modelo'))
 
-app_e.set('views','./vistas')
+app_e.set('views','./vista')
 app_e.set('view engine','ejs')
 app_e.get('/', crud_cliente.leer);
-app_e.post('/crud_c', crud_cliente.cud);*/
+app_e.post('/crud_c', crud_cliente.cud);
