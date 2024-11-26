@@ -1,0 +1,257 @@
+<!--Declara el tipo de documento y la versión de HTML que se está utilizando (HTML 5)-->
+<!DOCTYPE html>
+
+<!--Define el inicio del documento HTML y establece el idioma de la página como español (es)-->
+<html lang="es">
+
+<!---------------------------------------------------------HEAD----------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+<!--Contiene metadatos y enlaces a recursos externos como hojas de estilo y scripts.-->
+<head>
+
+  <!--Define el conjunto de caracteres utilizado (UTF-8 es universal y soporta la mayoría de los caracteres)--> 
+  <meta charset="UTF-8">
+  <!--Asegura que la página se visualice correctamente en dispositivos móviles ajustando el ancho y la escala inicial(resposive)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Proporciona una descripción de la página web para los motores de búsqueda-->
+  <meta name="description" content="Fundación dedicada a ayudar a las personas en situación de vulnerabilidad, ofreciendo apoyo social, educativo y emocional para mejorar sus vidas.">
+  <!--Define palabras clave relacionadas con el contenido de la página-->
+  <meta name="keywords" content="fundación, apoyo social, educación, pobreza, ayuda a niños, voluntariado, donaciones, desarrollo comunitario, inclusión social, bienestar infantil">
+  <!--Identifica al autor de la página-->
+  <meta name="author" content="Bootcamp Talento Tech">
+  <!--<title>: Define el título de la página que se muestra en la pestaña del navegador-->
+  <title>Fundacion_Social</title>
+  <!--Sirve para traer los iconos de boostrap en linea-->
+  <!--<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">-->
+
+  <!--Sirve para traer los iconos de boostrap local-->
+  <link rel="stylesheet" type="text/css" href="Assets(activos)/Vendor(recursos externos)/Boostrap-icons (Libreria para icnos y fuentes)/Icons (Iconos)/bootstrap-icons.min.css">  
+
+  <!--Sirve para traer los iconos de boostrap local-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--Sirve para traer los estilos css de boostrap en linea-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+
+  <!--Sirve para traer los estilos css de boostrap en local, carrousel, menu, row,container etc-->
+  <link rel="stylesheet" href="Assets(activos)/Vendor(recursos externos)/Boostrap(Librerias css y javascript)/Libreria css/bootstrap.min.css " rel="stylesheet">  
+
+  <!--Enlaza el archivo CSS personalizado para aplicar estilos a la página-->
+  <link rel="stylesheet" href="Assets(activos)/CSS (personalizado)/main.css">
+</head>
+<!------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+<!---------------------------------------------------------BODY----------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+<!--Contiene el contenido visible de la página web-->
+<body>
+     
+  
+    <!-----------------------------------------------------MENU-------------------------->
+    <!----------------------------------------------------------------------------------->
+    <!---insertamos cotainer para el menu-->
+    <div id="Inicio" class="container">
+      <!-- menu de navegación (Navbar) boostrap -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+  
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <!-- Imagen del logo de la fundación -->
+              <img src="Assets(activos)/Logos/logo.jpg" alt="Logo" width="70" height="70">
+              <!-- Texto del logo y slogan -->
+              <div class="ms-3">
+                <span class="brand-text">CREANDO, INNOVANDO,</span><br>
+                <span class="brand-text">SEMBRANDO Y ENSEÑANDO </span><br>
+                <span class="brand-text">IDEAS PARA UN MUNDO MEJOR.</span>
+              </div>
+            </div>
+          </a>
+  
+          <!-- Botón de hamburguesa alineado a la derecha en pantallas pequeñas -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Menú colapsable (links) para que se recojan en dispositivos-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <!-- Enlace de la sección "Inicio" -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <!-- Enlace de la sección "¿Quiénes Somos?" -->
+              <li class="nav-item">
+                <a class="nav-link" href="acerca.html">¿Quiénes Somos?</a>
+              </li>
+              <!-- Enlace de la sección "¿Qué Hacemos?" -->
+              <li class="nav-item">
+                <a class="nav-link " href="misión.html">¿Qué Hacemos?</a>
+              </li>
+              <!-- Enlace de la sección "Contacto" -->
+              <li class="nav-item">
+                <a class="nav-link " href="contacto.html">Contacto</a>
+              </li>
+              <!-- Enlace de la sección "Donaciones" -->
+              <li class="nav-item">
+                <a class="nav-link " href="login.html">Donaciones</a>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->
+
+
+    <!-----------------------------------------------------MAIN-------------------------->
+    <!----------------------------------------------------------------------------------->
+    <!--etiquta que contiene toda pagina y contiene el contenido principal de la pagina-->
+    <main>
+
+        <!------------------------SECCIO NDE TITULOS,PARRAFOS E IMAGENES------------------------>
+        <!-------------------------------------------------------------------------------------->
+        <!--contenedor de titulos y parrafos-->
+        <div class="row text-center">
+            <div class="col-xl-12 inicial">
+                <h1 class="titulo">CONTACTANOS</h1> <!-- Se aplica la clase titulo -->
+            </div>
+        
+            <div class="col-xl-12">
+                <span class="parrafo">CREANDO, INNOVANDO, SEMBRANDO</span><br>
+                <span class="parrafo">Y ENSEÑANDO IDEAS PARA UN MUNDO MEJOR </span><br>
+            </div>
+        </div>
+
+              <!--segmentamos fila en dispositivos-->
+              <div class="col-sm-12 col-md-12 col-xxl-12 col-xl-12 col-lg-12 ">
+                
+                <div class="container   FORMULARIOCONTACTO"> <!-- Sección de suscripción al boletín -->
+                  
+          
+                  <!-- Formulario de contacto -->
+                  <div class="contact-form">
+                    <!---tramitador de formulario hacia el correo-->
+                    <form id="contact-form" action="https://formsubmit.co/jhonkess@hotmail.com" method="POST" onsubmit="return validarFormulario(event)">
+                      
+                      <!--campo nombre-->
+                      <label  for="nombre">Nombre:</label><br>
+                      <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre"><br>
+                      <!--capturador de mesaje error de nombre-->
+                      <span id="error-nombre" class="error-message"></span><br>
+                
+                      <!--campo correo-->
+                      <label for="correo">Correo electrónico:</label><br>
+                      <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo"><br>
+                       <!--capturador de mesaje error de nombre-->
+                      <span id="error-correo" class="error-message"></span><br>
+                
+                      <!--campo mensaje-->
+                      <label for="mensaje">Mensaje:</label><br>
+                      <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ingrese la descripcion de su mensaje"></textarea><br>
+                       <!--capturador de mesaje error de nombre-->
+                      <span id="error-mensaje" class="error-message"></span><br>
+                
+                      <input type="submit" value="Enviar">
+                    </form>
+                    
+                    <div id="success-message" class="success-message">
+                      El correo ha sido enviado exitosamente a <strong>jhonkess@hotmail.com</strong>.
+                    </div>
+                  </div>
+                
+
+                </div>
+
+
+             </div>
+
+
+             
+                     
+
+    </main>
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->
+    
+
+    <!-----------------------------------------------------FOOTER------------------------>
+    <!----------------------------------------------------------------------------------->
+      <!-- Footer -->
+      <footer id="pie" class="footer  text-white py-3">
+        <div class="container">
+          <div class="row">
+      
+            <!-- Sección de Logo (más pequeño) -->
+            <div class="col-4 col-md-4  text-center">
+              <div class="footer-logo">
+                <img src="Assets(activos)/Logos/logo.jpg" alt="Logo" class="footer-logo-img img-fluid">
+              </div>
+            </div>
+      
+            <!-- Sección de Información de Contacto -->
+            <div class="col-4 col-md-4 mb-3 text-center text-md-left">
+              <div class="footer-contact">
+                <h5 class="mb-2" >Contáctanos</h5>
+                <p>Email: <a href="mailto:jhonkess@hotmail.com" class="text-pink">socialfundacion44@gmail.com</a></p>
+                <p>Teléfono: <a href="tel:+123456789" class="text-pink">+57 304 440 80 72</a></p>
+              </div>
+            </div>
+      
+            <!-- Sección de Enlaces -->
+            <div class="col-4 col-md-4 mb-3 text-center text-md-right">
+              <div class="footer-links">
+                <h5 class="mb-2">Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                  <li><a href="Mision.html" class="text-pink">Nuestra Misión</a></li>
+                  <li><a href="Acerca.html" class="text-pink">Conocenos</a></li>
+                  <li><a href="Contacto.html" class="text-pink">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+            
+
+            <!-- Sección de Derechos Reservados -->
+            <div class="text-center mt-4">
+              <p style="color: #80AFCD;">&copy; 2024 Talento Tech (campus.talentotechbogota.co(Grupo 7)). Todos los derechos reservados.</p>
+            </div>
+
+          </div>
+      
+          </div> <!-- End row -->
+        </div> <!-- End container -->
+      
+        <!-- Botón de Scroll Arriba -->
+        <div class="text-center">
+          <a href="#Inicio">
+            <button class="btn btn-pink btn-floating" type="button">
+              <i class="bi bi-arrow-up" style="font-size: 30px;"></i> 
+            </button>
+          </a>
+        </div>
+      
+      </footer>
+
+    <!----------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------->   
+
+<!------------------------------JLIBRERIA BOOSTRAP JAVASCRIPT------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!--permite funcionalidades multiple para dispositivos en este caso hace que el menu de navegacion pueda desplazarse cuando este en un dispositivo pequeño,y sirve para mas funcionalidades a nivel general que se hallan construido con java scritp en linea-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+
+<!--permite funcionalidades multiple para dispositivos en este caso hace que el menu de navegacion pueda desplazarse cuando este en un dispositivo pequeño,y sirve para mas funcionalidades a nivel general que se hallan construido con java scritp local-->
+<!---librerria javascritp local para que funcione el carrousel ,carrousel, menu, row,container etc-->
+<script src="Assets(activos)/Vendor(recursos externos)/Boostrap(Librerias css y javascript)/Libreria javascritp/bootstrap.bundle.min.js"></script>
+<!--archivo javascritp personalizado-->
+<script src="Assets(activos)/Javascrtip (personalizado)/main.js"></script>
+</body>
+<!------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------>
+
+</html>
